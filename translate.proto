@@ -22,7 +22,7 @@ option objc_class_prefix = "HLW";
 package translate_service;
 
 service Translate {
-  rpc TranlateText (stream TextRequest) returns (TextReply) {}
+  rpc TranslateText (stream TextRequest) returns (TextReply) {}
 }
 
 message TextRequest {
