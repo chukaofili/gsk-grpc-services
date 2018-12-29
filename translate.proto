@@ -27,9 +27,10 @@ service Translate {
 
 message TextRequest {
   required string auth = 1;
-  required string text = 2;
-  required string target = 3;
-  optional string source = 4;
+  required string interview = 2;
+  required string text = 3;
+  required string target = 4;
+  optional string source = 5;
 }
 
 message TextReply {
