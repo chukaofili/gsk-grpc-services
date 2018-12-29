@@ -26,7 +26,7 @@ service Translate {
 }
 
 message TextRequest {
-  required string auth = 1;
+  required string token = 1;
   required string interview = 2;
   required string text = 3;
   required string target = 4;
