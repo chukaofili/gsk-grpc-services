@@ -1,15 +1,17 @@
 syntax = "proto3";
 package translate_service;
 
+// Required MetaData `token` (jwt string)
+// Required MetaData `interview` (id string of the interview session)
+
 service Translate {
   rpc TranslateText (stream TextRequest) returns (TextReply) {}
 }
 
 message TextRequest {
-  required string interview = 1;
-  required string text = 2;
-  required string target = 3;
-  optional string source = 4;
+  required string text = 1;
+  required string target = 2;
+  optional string source = 3;
 }
 
 message TextReply {
